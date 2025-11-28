@@ -4,6 +4,14 @@ import numpy as np
 from datetime import datetime
 import random
 
+try:
+    import cv2
+    CV2_AVAILABLE = True
+except ImportError:
+    CV2_AVAILABLE = False
+    st.error("OpenCV not installed. Install opencv-python-headless to enable video processing.")
+
+
 # ---------------- CONFIG ----------------
 st.set_page_config(page_title="Street Safety System", page_icon="🛡️", layout="wide")
 
