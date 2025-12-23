@@ -1,4 +1,9 @@
+streamlit
 opencv-python-headless
 numpy
-streamlit
+pillow
+torch
+ultralytics
+
+
 
